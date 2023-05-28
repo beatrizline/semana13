@@ -1,0 +1,22 @@
+def soma_cumulativa(lista_original):
+    soma = 0
+    lista = []
+    for i in lista_original:
+        soma += i
+        lista.append(soma)
+    return lista
+
+def main():
+    numero = []
+    while True:
+        num = int(input())
+        if num == 0:
+            break
+        numero.append(num)
+
+    resultado = soma_cumulativa(numero)
+
+    print(resultado)
+
+if __name__ == '__main__':
+    main()
